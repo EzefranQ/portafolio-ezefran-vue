@@ -19,7 +19,7 @@ export default {
                 {link: 'About', href: '/'},
                 {link: 'Resume', href: '/resume'},
                 {link: 'Portfolio', href: '/portfolio'},
-                {link: 'Blog', href: '/github'},
+                {link: 'Blog', href: '/blog'},
                 {link: 'GitHub', href: '/github'},
             ]
         }
