@@ -34,7 +34,7 @@ export default {
     data() {
         return {
             articles: [
-                {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../logo.png', class: 'w-28 h-10'},
+                {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '/../logo.png', class: 'w-28 h-10'},
                 {title: 'JavaScript', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../JavaScript-svg.png',  class: 'w-28 h-10'},
                 {title: 'Tailwind', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Tailwind.png', class: 'w-36 h-9'},
                 {title: 'Angular', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Angular.png',  class: 'w-28 h-11'},
