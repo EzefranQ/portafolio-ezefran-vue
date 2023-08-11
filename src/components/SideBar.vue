@@ -9,8 +9,6 @@
         <header class="flex xl:flex-col flex-row justify-start xl:justify-center items-center gap-4 p-2">
             <div class="xl:w-40 xl:h-40 md:w-28 w-20 border-style">
                 <img class="w-full h-full" src="/img/icon.webp" alt="logo">
-                    <!-- <img class="w-full h-full b" src="/img/icon 160.webp" alt="logo">
-                    <img class="w-full h-full c" src="/img/icon 80.webp" alt="logo"> -->
             </div>
             <div class="text-center xl:mt-4 mt-0">
                 <h1 class="sm:text-2xl lg:text-lg text-sm font-semibold w-full">Francisco Quijada</h1>
@@ -58,30 +56,5 @@ button{
     background: rgba(43,43,44,.75);
     border: 2px solid #383838;  
     transform: translate(5px, -5px);
-}
-.a{
-    display: block;
-}
-.b{
-    display: none;
-}
-.c{
-    display: none;
-}
-@media screen and (max-width: 1280px) {
-    .a{
-        display: none;
-    }
-    .b{
-        display: block;
-    }
-}
-@media screen and (max-width: 1280px) {
-    .b{
-        display: none;
-    }
-    .c{ 
-        display: block;
-    }
 }
 </style>
