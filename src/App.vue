@@ -25,6 +25,20 @@
 </script>
 
 <style>
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #121212;
+  font-family: 'Poppins', sans-serif;
+}
 .border-style{
   border: 2px solid #383838;
 }
@@ -34,16 +48,6 @@
   height: 4.5px;
   background: rgb(255, 174, 0);
   border-color: rgb(255, 174, 0);
-}
-h1, h2, h3, p, div, section{
-  font-family: 'Poppins', sans-serif;
-}
-body{
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  background-color: #121212;
 }
 section{
   background: #1e1e1f;
