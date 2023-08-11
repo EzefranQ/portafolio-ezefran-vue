@@ -1,5 +1,5 @@
 <template>  
-  <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-24 px-3 md:py-16 py-5 flex justify-center items-start gap-5 text-white">
+  <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-14 px-3 md:py-16 py-5 flex justify-center items-start gap-5 text-white">
 
     <section class="h-full xl:w-auto w-full">
       <SideBar class="border-style xl:rounded-3xl rounded-xl " />
@@ -15,10 +15,12 @@
 <script>
   import SideBar from "./components/SideBar.vue";
   import AsideViews from "./components/AsideViews.vue";
+
   export default {
     components: {
       SideBar,
-      AsideViews
+      AsideViews,
+
     },
   };
 
@@ -51,5 +53,10 @@ body{
 }
 section{
   background: #1e1e1f;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/assets/font/Poppins-Regular.ttf');
+  font-display: swap;
 }
 </style>

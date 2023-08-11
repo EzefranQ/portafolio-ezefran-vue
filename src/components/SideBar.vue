@@ -1,5 +1,5 @@
 <template>
-    <section class="py-4 px-2 flex flex-col gap-5 xl:w-72 w-full relative overflow-hidden">
+    <section class="py-4 px-2 flex flex-col gap-5 xl:w-72 w-full relative overflow-hidden xl:rounded-3xl rounded-xl ">
 
         <!-- <button class="absolute right-0 top-0 p-3 px-8 rounded-bl-2xl rounded-tr-2xl" @click="showMenu">
             <span v-show="!showNav">Mostrar</span>
@@ -7,8 +7,8 @@
         </button> -->
 
         <header class="flex xl:flex-col flex-row justify-start xl:justify-center items-center gap-4 p-2">
-            <div class="xl:w-40 xl:h-40 md:w-28 w-20 border bg-red-50 ">
-                <img class="w-full h-full" src="/icon.png" alt="">
+            <div class="xl:w-40 xl:h-40 md:w-28 w-20 border-style">
+                <img class="w-full h-full rounded-full" src="/icon.png" alt="">
             </div>
             <div class="text-center xl:mt-4 mt-0">
                 <h1 class="sm:text-2xl lg:text-lg text-sm font-semibold w-full">Francisco Quijada</h1>

@@ -1,10 +1,12 @@
 <template>
-    <nav class="absolute right-0 top-0 flex gap-8 px-10 py-5 rounded-bl-2xl rounded-tr-2xl border-style trans">
+    <nav class="flex flex-wrap justify-center md:rounded-bl-2xl rounded-tr-2xl md:rounded-tl-none rounded-tl-2xl
+        md:justify-start md:gap-8 md:gap-y-8 gap-y-2 gap-4 md:px-10 px-3 py-5 border-style md:absolute fixed trans
+        right-0 md:top-0 md:w-auto w-screen z-50 ">
         <ul v-for="item in links" :key="item.id">
-            <li>
-                <RouterLink :to="item.href" class="hover:text-slate-400 duration-150 ease-in font-medium">
+            <li>    
+                <RouterLink :to="item.href" class="font-medium md:text-base text-sm">
                     {{ item.link }}
-                </RouterLink>
+                </RouterLink>   
             </li>
         </ul>
     </nav>
@@ -35,6 +37,16 @@ export default {
     transform: translate(5px, -5px);
 }
 nav{
-    background: rgba(43,43,44,.75);
+    background: rgba(43,43,44,.9);
 }
+@media screen and (max-width: 768px) {
+    .trans{
+        transform: translate(0, -0);
+        bottom: 0;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);   
+
+    }
+}
+
 </style>

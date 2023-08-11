@@ -1,7 +1,7 @@
 <template>
-    <div class="flex justify-between relative p-10 overflow-hidden">
+    <div class="flex justify-between relative py-10 md:px-10 sm:px-5 px-3 overflow-hidden">
 
-        <nav>
+        <nav class="">
             <NavBar /> 
         </nav>
 
@@ -13,9 +13,6 @@
                 </transition>
             </router-view>  
         </section>
-
-    </div>
-    <div>
 
     </div>
 </template>

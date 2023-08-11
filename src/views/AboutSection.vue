@@ -4,7 +4,7 @@
             <h1 class="font-semibold text-3xl">About</h1>
             <hr class="rounded-2xl">
         </header>
-        <section class="mt-10 px-5 leading-7">
+        <section class="mt-10 ml-4 leading-7">
             <p>
                 Soy un desarrollador web con dos años de experiencia en el campo. Tengo conocimientos en HTML, CSS, Bootstrap, Tailwind, Vue, EJS y JavaScript. Tengo conocimientos de las últimas tecnologías web y siempre estoy al día de los últimos desarrollos.
                     <br><br>   
