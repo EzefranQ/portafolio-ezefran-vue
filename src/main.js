@@ -2,6 +2,17 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import tailwindcss from './style.css'
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
 
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-createApp(App, tailwindcss).use(router).mount('#app')
+/* import specific icons */
+import { faCircleHalfStroke, faEnvelope, faLanguage, faPhone, faLocationDot, } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+/* add icons to the library */
+library.add(faPhone, faLinkedin, faGithub, faCircleHalfStroke, faLanguage, faEnvelope, faLocationDot, faEnvelope)
+
+createApp(App, tailwindcss).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app')

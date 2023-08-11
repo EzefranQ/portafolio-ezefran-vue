@@ -4,8 +4,8 @@
         <section class="xl:flex xl:flex-col grid lg:grid-cols-2 grid-cols-1 gap-10 justify-center xl:w-auto lg:w-4/6 w-full">
             
             <article v-for="contact in contacts" :key="contact.id" class="flex items-center gap-5">
-                <div class="w-12 h-12 borderStyle text-xl flex justify-center items-center">
-                    <i :class="contact.icon"></i>
+                <div class="w-12 h-12 borderStyle text-xl flex justify-center items-center">    
+                    <font-awesome-icon :icon="contact.icon" />  
                 </div>
                 <p class="text-slate-400">{{ contact.brand }}
                     <span class="block text-white">
@@ -18,13 +18,13 @@
         <hr class="w-full xl-w-52 m-auto">
         <section class="flex gap-7 text-2xl xl:justify-center lg:justify-end xl:w-auto md:w-4/12 pb-1">
             <a href="#" class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
-                <i class="fa-regular fa-envelope"></i>
+                <font-awesome-icon icon="fa-solid fa-envelope" />    
             </a>
             <button class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
-                <i class="fa-solid fa-language"></i>
+                <font-awesome-icon icon="fa-solid fa-language" />
             </button>
             <button class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
-                <i class="fa-solid fa-circle-half-stroke"></i>
+                <font-awesome-icon icon="fa-solid fa-circle-half-stroke" />
             </button>
         </section>
     </section>
@@ -36,7 +36,7 @@ export default {
     data() {
         return {
             contacts: [
-                {brand: 'Linkedin', nick: 'Ezefran', icon: 'fa-brands fa-linkedin'},
+                {brand: 'Linkedin', nick: 'Ezefran', icon: `fa-brands fa-linkedin`},
                 {brand: 'Github', nick: 'EzefranQ', icon: 'fa-brands fa-github'},
                 {brand: 'Phone', nick: '+58 4267849573', icon: 'fa-solid fa-phone'},
                 {brand: 'Location', nick: 'Venezuela', icon: 'fa-solid fa-location-dot'},
