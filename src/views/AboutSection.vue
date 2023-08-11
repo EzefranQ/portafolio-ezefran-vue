@@ -7,18 +7,18 @@
         <section class="mt-10 px-5 leading-7">
             <p>
                 Soy un desarrollador web con dos años de experiencia en el campo. Tengo conocimientos en HTML, CSS, Bootstrap, Tailwind, Vue, EJS y JavaScript. Tengo conocimientos de las últimas tecnologías web y siempre estoy al día de los últimos desarrollos.
-                    <br><br>
+                    <br><br>   
                 Soy una persona proactiva, responsable y con ganas de aprender. Estoy siempre buscando nuevos retos y desafíos. Tengo una gran capacidad de trabajo en equipo y soy capaz de trabajar de forma independiente.
-                    <br><br>
+                    <br><br>   
                 Estoy seguro de que puedo aportar un gran valor. Soy una persona creativa y con ideas nuevas. Tengo capacidad en la resolución de problemas y siempre estoy buscando formas de mejorar la experiencia de usuario.
-                    <br><br>
+                    <br><br>    
                 Aparte de ser desarrollador, disfruto la mayor parte de mi tiempo practicando calistenia y jugando algún videojuego.
             </p>
         </section>
-        <section class="mt-10 flex flex-wrap justify-between items-center">
-            <article v-for="article in articles" :key="article.id" class="md:w-96 h-44 flex gap-5 borderStyle p-8">
-                <div :class="article.class">
-                    <img class="w-full h-full translate-y-3" :src="article.src" alt="">
+        <section class="mt-10 grid grid-cols-2 gap-y-8 gap-x-5">
+            <article v-for="article in articles" :key="article.id" class="max-h-80 max-w-2xl flex gap-5 borderStyle p-8">
+                <div class="w-20 h-20">
+                    <img class="translate-y-3" :src="article.src" alt="">
                 </div>
                 <div class="flex flex-col gap-2">
                     <h1>{{ article.title }}</h1>
@@ -34,10 +34,10 @@ export default {
     data() {
         return {
             articles: [
-                {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '/../logo.png', class: 'w-28 h-10'},
-                {title: 'JavaScript', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../JavaScript-svg.png',  class: 'w-28 h-10'},
-                {title: 'Tailwind', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Tailwind.png', class: 'w-36 h-9'},
-                {title: 'Angular', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Angular.png',  class: 'w-28 h-11'},
+                {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '/../logo.png'},
+                {title: 'JavaScript', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../JavaScript-svg.png'},
+                {title: 'Tailwind', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Tailwind.png'},
+                {title: 'Angular', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Angular.png'},
             ]
         }
     },
@@ -60,4 +60,5 @@ export default {
     position: absolute;
     z-index: -1
 }
+
 </style>

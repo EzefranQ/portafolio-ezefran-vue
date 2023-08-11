@@ -1,11 +1,11 @@
 <template>  
-  <main class="h-full w-full py-16 px-20 flex justify-center items-start gap-10 text-white">
+  <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-24 px-3 md:py-16 py-5 flex justify-center items-start gap-5 text-white">
 
-    <section class="h-full">
-      <SideBar class="border-style rounded-3xl" />
+    <section class="h-full xl:w-auto w-full">
+      <SideBar class="border-style xl:rounded-3xl rounded-xl " />
     </section>
 
-    <section class="border-style rounded-3xl w-full h-full">
+    <section class="border-style xl:rounded-3xl rounded-xl  w-full h-full">
       <AsideViews />
     </section>
 
@@ -38,7 +38,11 @@
 h1, h2, h3, p, div, section{
   font-family: 'Poppins', sans-serif;
 }
-main{
+body{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
   background-color: #121212;
 }
 section{
