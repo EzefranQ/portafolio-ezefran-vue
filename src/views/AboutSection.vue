@@ -17,9 +17,9 @@
         </section>
         <section class="mt-10 grid grid-cols-2 gap-y-8 gap-x-5">
             <article v-for="article in articles" :key="article.id" class="max-h-80 max-w-2xl flex gap-5 borderStyle p-8">
-                <div class="w-20 h-20">
-                    <img class="translate-y-3" :src="article.src" alt="">
-                </div>
+                    <div class="w-20 h-20">
+                        <img class="translate-y-3" :src="article.src" alt="">
+                    </div>
                 <div class="flex flex-col gap-2">
                     <h1>{{ article.title }}</h1>
                     <p>{{ article.content }}</p>
@@ -34,10 +34,10 @@ export default {
     data() {
         return {
             articles: [
-                {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '/../logo.png'},
-                {title: 'JavaScript', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../JavaScript-svg.png'},
-                {title: 'Tailwind', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Tailwind.png'},
-                {title: 'Angular', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../Angular.png'},
+                {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/logo.webp'},
+                {title: 'JavaScript', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/JavaScript.webp'},
+                {title: 'Tailwind', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/Tailwind.webp'},
+                {title: 'Angular', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/Angular.webp'},
             ]
         }
     },
