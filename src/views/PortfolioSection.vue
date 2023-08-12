@@ -2,7 +2,7 @@
     <div >
         <header class="sub-header">
             <h1 class="font-semibold text-2xl">Portfolio</h1>
-            <hr class="rounded-2xl">
+            <hr class="rounded-2xl mt-2">
         </header>
         <section class="mt-10 px-5">
             <div>

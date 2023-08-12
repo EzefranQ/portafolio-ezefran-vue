@@ -1,7 +1,7 @@
 <template>
-    <div class="flex justify-between relative py-10 md:px-10 sm:px-5 px-3 overflow-hidden">
+    <div class="flex justify-between relative md:py-10 py-3 md:px-10 sm:px-5 px-4 overflow-hidden ">
 
-        <nav class="">
+        <nav class="md:absolute hidden md:block right-0 md:top-0 md:w-auto">
             <NavBar /> 
         </nav>
 

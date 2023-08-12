@@ -1,7 +1,6 @@
 <template>
     <nav class="flex flex-wrap justify-center md:rounded-bl-2xl rounded-tr-2xl md:rounded-tl-none rounded-tl-2xl
-        md:justify-start md:gap-8 md:gap-y-8 gap-y-2 gap-4 md:px-10 px-3 py-5 border-style md:absolute fixed trans
-        right-0 md:top-0 md:w-auto w-screen z-50 ">
+        md:justify-start md:gap-x-8 md:gap-y-8 gap-y-2 sm:gap-x-10 gap-x-2.5 md:px-10 py-5 border-style z-50">
         <ul v-for="item in links" :key="item.id">
             <li>    
                 <RouterLink :to="item.href" class="font-medium md:text-base text-sm">
@@ -37,15 +36,14 @@ export default {
     transform: translate(5px, -5px);
 }
 nav{
-    background: rgba(43,43,44,.9);
+    background: rgba(43,43,44,.9);      
 }
 @media screen and (max-width: 768px) {
     .trans{
-        transform: translate(0, -0);
-        bottom: 0;
+        transform: translate(0, -0);    
+        bottom: 0; 
         -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);   
-
+        backdrop-filter: blur(5px);
     }
 }
 

@@ -2,7 +2,7 @@
     <div >
         <header class="sub-header">
             <h1 class="font-semibold text-3xl">About</h1>
-            <hr class="rounded-2xl">
+            <hr class="rounded-2xl mt-2">
         </header>
         <section class="mt-10 ml-4 leading-7">
             <p>
@@ -15,15 +15,17 @@
                 Aparte de ser desarrollador, disfruto la mayor parte de mi tiempo practicando calistenia y jugando algún videojuego.
             </p>
         </section>
-        <section class="mt-10 grid grid-cols-2 gap-y-8 gap-x-5">
-            <article v-for="article in articles" :key="article.id" class="max-h-80 max-w-2xl flex gap-5 borderStyle p-8">
-                    <div class="w-20 h-20">
-                        <img class="translate-y-3" :src="article.src" alt="">
-                    </div>
+        <section class="mt-10 grid lg:grid-cols-2 grid-cols-1 place-items-center gap-y-8 gap-x-5">
+            <article v-for="article in articles" :key="article.id" class="max-h-80 max-w-2xl flex md:flex-row flex-col items-center md:text-start text-center gap-5 borderStyle sm:p-6 p-4 ">
+                <div class="w-auto h-auto">     
+                    <svg viewBox="0 0 128 128" height="50" width="50">
+                        <path :d="article.d" :fill="article.fill"></path>
+                    </svg>
+                </div>
                 <div class="flex flex-col gap-2">
                     <h1>{{ article.title }}</h1>
                     <p>{{ article.content }}</p>
-                </div>
+                </div>  
             </article>
         </section>
     </div>
@@ -34,10 +36,10 @@ export default {
     data() {
         return {
             articles: [
-                {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/logo.webp'},
-                {title: 'JavaScript', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/JavaScript.webp'},
-                {title: 'Tailwind', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/Tailwind.webp'},
-                {title: 'Angular', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', src: '../img/Angular.webp'},
+            {title: 'Vue', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', d: 'M0 8.934l49.854.158 14.3 24.415 14.3-24.415 49.548-.158-63.835 110.134zm126.987.637l-24.37.021-38.473 66.053L25.692 9.592l-24.75-.02 63.212 107.89z', fill: '#41b883'},
+                {title: 'JavaScript', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', d: 'M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z', fill: '#F0DB4F' },
+                {title: 'Tailwind', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', d: 'M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0', fill: '#2298bd'},
+                {title: 'Angular', content: 'I build modern and advanced websites and applications with React or Expo by React Native.', d: 'M52.864 64h23.28L63.769 38.123zM63.81 1.026L4.553 21.88l9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635L63.81 1.026zM48.044 75l-7.265 18.176-13.581.056 36.608-81.079-.07-.153h-.064l.001-.133.063.133h.141l.123-.274V12h-.124l-.069.153 38.189 81.417-13.074-.287-8.042-18.58-17.173.082', fill: '#C4473A'},
             ]
         }
     },

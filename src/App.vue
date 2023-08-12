@@ -1,18 +1,29 @@
-<template>  
-  <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-14 px-3 md:py-16 py-5 flex justify-center items-start gap-5 text-white">
+<template>
 
-    <section class="h-full xl:w-auto w-full">
-      <SideBar class="border-style xl:rounded-3xl rounded-xl " />
-    </section>
+  <div class=" text-white">
 
-    <section class="border-style xl:rounded-3xl rounded-xl  w-full h-full">
-      <AsideViews />
-    </section>
+    <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-14 px-3 md:py-16 py-0 flex justify-center items-start gap-5">
+    
+      <section class="h-full xl:w-auto w-full">
+        <SideBar class="border-style xl:rounded-3xl rounded-xl" />
+      </section>
+      
+      <section class="border-style xl:rounded-3xl rounded-xl w-full h-full">
+        <AsideViews />
+      </section>
 
-  </main>
+    </main>
+
+    <nav class="">
+        <NavBar class="mt-5 md:hidden absolute w-screen"/> 
+    </nav> 
+
+</div>   
+
 </template>
 
 <script>
+  import NavBar from "./components/NavBar.vue";
   import SideBar from "./components/SideBar.vue";
   import AsideViews from "./components/AsideViews.vue";
 
@@ -20,7 +31,7 @@
     components: {
       SideBar,
       AsideViews,
-
+      NavBar
     },
   };
 
@@ -46,7 +57,6 @@ body{
 }
 .sub-header hr{
   width: 40px;
-  margin-top: 18px;
   height: 4.5px;
   background: rgb(255, 174, 0);
   border-color: rgb(255, 174, 0);
