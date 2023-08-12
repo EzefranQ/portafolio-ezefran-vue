@@ -4,7 +4,7 @@
             <h1 class="font-semibold text-2xl">Resume</h1>
             <hr class="rounded-2xl mt-2">
         </header>
-        <section class="mt-10 px-5">
+        <section class="mt-10 ml-4 leading-7">
             <div>
                 <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni tenetur ipsum excepturi dolorum labore, praesentium a, aperiam itaque voluptatem nihil, ex id minima officiis quisquam! Eos quibusdam atque pariatur.</div>
                 <div>Aut debitis a reprehenderit aspernatur eveniet, dignissimos molestias velit aperiam iure, molestiae sapiente modi. Perspiciatis, quisquam, cumque fuga asperiores perferendis aperiam repellat earum harum ipsa ipsam corrupti, praesentium molestias provident.</div>

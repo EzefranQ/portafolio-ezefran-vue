@@ -1,13 +1,7 @@
 <template>
     <section class="py-4 px-2 flex flex-col gap-5 xl:w-72 w-full relative overflow-hidden xl:rounded-3xl rounded-xl ">
-
-        <!-- <button class="absolute right-0 top-0 p-3 px-8 rounded-bl-2xl rounded-tr-2xl" @click="showMenu">
-            <span v-show="!showNav">Mostrar</span>
-            <span v-show="showNav">Ocultar</span>
-        </button> -->
-
-        <header class="flex xl:flex-col flex-row justify-start xl:justify-center items-center gap-4 p-2">
-            <div class="xl:w-40 xl:h-40 md:w-28 w-20 border-style">
+        <header class="flex xl:flex-col flex-row justify-start xl:justify-center items-center md:gap-4 gap-3 p-2">
+            <div class="xl:w-40 xl:h-40 lg:w-28 w-20 border-style fix-logo">
                 <img class="w-full h-full" src="/img/icon.webp" alt="logo">
             </div>
             <div class="text-center xl:mt-4 mt-0">
@@ -19,8 +13,8 @@
                 </div>
             </div>
         </header>
-        <section class="w-full" v-show="showNav">
-            <FooterSideBar />
+        <section class="w-full">
+            <FooterSideBar/>
         </section>
     </section>
 </template>
@@ -43,11 +37,6 @@ export default {
             showNav: true,
         }
     },
-    methods:{
-        showMenu(){
-            this.showNav = !this.showNav
-        }
-    }
 };
 </script>
 
@@ -57,4 +46,10 @@ button{
     border: 2px solid #383838;  
     transform: translate(5px, -5px);
 }
+@media screen and (max-width: 400px) {
+    .fix-logo{
+        width: 20%;
+    }
+}
+
 </style>

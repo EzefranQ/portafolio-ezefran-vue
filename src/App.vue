@@ -1,6 +1,6 @@
 <template>
 
-  <div class=" text-white">
+  <div class="text-gray-50">
 
     <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-14 px-3 md:py-16 py-0 flex justify-center items-start gap-5">
     
@@ -14,8 +14,8 @@
 
     </main>
 
-    <nav class="">
-        <NavBar class="mt-5 md:hidden absolute w-screen"/> 
+    <nav class="h-20 bg-transparent">
+        <NavBar class="mt-5 md:hidden fixed bottom-0 w-screen trans"/> 
     </nav> 
 
 </div>   
@@ -69,4 +69,16 @@ section{
   src: url('/src/assets/font/Poppins-Regular.ttf');
   font-display: swap;
 }
+.trans{
+    transform: translate(5px, -5px);
+}
+
+@media screen and (max-width: 768px) {
+    .trans{
+        transform: translate(0, -0);    
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
 </style>

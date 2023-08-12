@@ -32,19 +32,7 @@ export default {
 .router-link-active{
     color: rgb(255, 174, 0);
 }
-.trans{
-    transform: translate(5px, -5px);
-}
 nav{
     background: rgba(43,43,44,.9);      
 }
-@media screen and (max-width: 768px) {
-    .trans{
-        transform: translate(0, -0);    
-        bottom: 0; 
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-    }
-}
-
 </style>
