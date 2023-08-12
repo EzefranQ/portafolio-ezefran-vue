@@ -17,13 +17,13 @@
         </section>
         <hr class="w-full xl-w-52 m-auto">
         <section class="flex gap-7 text-2xl xl:justify-center lg:justify-end xl:w-auto md:w-4/12 pb-1">
-            <a href="#" class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
+            <a aria-label="Contact Me!" href="#" class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
                 <font-awesome-icon icon="fa-solid fa-envelope" />    
             </a>
-            <button class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
+            <button aria-label="Change Languaje" class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
                 <font-awesome-icon icon="fa-solid fa-language" />
             </button>
-            <button class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
+            <button aria-label="Change Color" class="bg-white h-10 w-10 rounded-full flex justify-center items-center text-slate-900 hover:text-white hover:bg-slate-900 border-2 border-transparent hover:border-white hover:text-xl duration-300">
                 <font-awesome-icon icon="fa-solid fa-circle-half-stroke" />
             </button>
         </section>
