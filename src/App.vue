@@ -2,7 +2,7 @@
 
   <div class="text-gray-50">
 
-    <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-14 px-3 md:py-16 py-0 flex justify-center items-start gap-5">
+    <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-14 px-3 md:py-16 py-10 pb-5 flex justify-center items-start gap-5">
     
       <section class="h-full xl:w-auto w-full">
         <SideBar class="border-style xl:rounded-3xl rounded-xl" />
