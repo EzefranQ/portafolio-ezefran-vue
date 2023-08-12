@@ -12,7 +12,7 @@
                     <br><br>   
                 Estoy seguro de que puedo aportar un gran valor. Soy una persona creativa y con ideas nuevas. Tengo capacidad en la resolución de problemas y siempre estoy buscando formas de mejorar la experiencia de usuario.
                     <br><br>    
-                Aparte de ser desarrollador, disfruto la mayor parte de mi tiempo practicando calistenia y jugando algún videojuego.
+                Aparte de ser desarrollador, disfruto la mayor parte de mi tiempo programando, practicando calistenia, jugando algún videojuego y con mi familia o amigos.
             </p>
         </section>
         <section class="mt-10 grid lg:grid-cols-2 grid-cols-1 place-items-center gap-y-8 gap-x-5 md:text-base text-sm">

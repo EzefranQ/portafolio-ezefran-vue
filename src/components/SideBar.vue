@@ -6,9 +6,9 @@
             </div>
             <div class="text-center xl:mt-4 mt-0">
                 <h1 class="sm:text-2xl lg:text-lg text-sm font-semibold w-full">Francisco Quijada</h1>
-                <div class=" xl:mt-4 mt-2 flex flex-row xl:flex-col">
+                <div class="xl:mt-4 mt-2 flex flex-row xl:flex-col items-center justify-center">
                     <h1 class="font-light sm:text-sm text-xs">Web Developer</h1>
-                    <span class="mr-2 -mt-1 xl:-mt-0 xl:hidden ">,</span>
+                    <span class="sm:mr-2 mr-1 xl:hidden ">,</span>
                     <h1 class="font-light sm:text-sm text-xs">Front End</h1>
                 </div>
             </div>
