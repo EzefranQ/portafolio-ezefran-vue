@@ -1,8 +1,8 @@
 <template>
     <section class="py-4 px-2 flex flex-col gap-5 xl:w-72 w-full relative overflow-hidden xl:rounded-3xl rounded-xl ">
         <header class="flex xl:flex-col flex-row justify-start xl:justify-center items-center md:gap-4 gap-3 p-2">
-            <div class="xl:w-40 xl:h-40 lg:w-28 w-20 border-style fix-logo">
-                <img class="w-auto h-auto" src="/img/icon.webp" alt="logo">
+            <div class=" border-style fix-logo">
+                <img class="xl:w-40 xl:h-40 lg:w-28 w-20" src="/img/icon.webp" alt="logo">
             </div>
             <div class="text-center xl:mt-4 mt-0">
                 <h1 class="sm:text-2xl lg:text-lg text-sm font-semibold w-full">Francisco Quijada</h1>
