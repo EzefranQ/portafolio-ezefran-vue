@@ -5,15 +5,13 @@
             <hr class="rounded-2xl mt-2">
         </header>
         <section class="sm:mt-10 mt-6 ml-2 leading-7 md:text-base text-sm textColor">
-            <p>
-                Soy un desarrollador web con dos años de experiencia en el campo. Tengo conocimientos en HTML, CSS, Bootstrap, Tailwind, Vue, EJS y JavaScript. Tengo conocimientos de las últimas tecnologías web y siempre estoy al día de los últimos desarrollos.
-                    <br><br>   
-                Soy una persona proactiva, responsable y con ganas de aprender. Estoy siempre buscando nuevos retos y desafíos. Tengo una gran capacidad de trabajo en equipo y soy capaz de trabajar de forma independiente.
-                    <br><br>   
-                Estoy seguro de que puedo aportar un gran valor. Soy una persona creativa y con ideas nuevas. Tengo capacidad en la resolución de problemas y siempre estoy buscando formas de mejorar la experiencia de usuario.
-                    <br><br>    
-                Aparte de ser desarrollador, disfruto la mayor parte de mi tiempo programando, practicando calistenia, jugando algún videojuego y con mi familia o amigos.
-            </p>
+            <p>Soy un desarrollador web con dos años de experiencia en el campo. Tengo conocimientos en HTML, CSS, Bootstrap, Tailwind, Vue, EJS y JavaScript. Tengo conocimientos de las últimas tecnologías web y siempre estoy al día de los últimos desarrollos.</p>
+                <br><br>
+            <p>Soy una persona proactiva, responsable y con ganas de aprender. Estoy siempre buscando nuevos retos y desafíos. Tengo una gran capacidad de trabajo en equipo y soy capaz de trabajar de forma independiente.</p>
+                <br><br>
+            <p>Estoy seguro de que puedo aportar un gran valor. Soy una persona creativa y con ideas nuevas. Tengo capacidad en la resolución de problemas y siempre estoy buscando formas de mejorar la experiencia de usuario.</p>
+                <br><br>
+            <p>Aparte de ser desarrollador, disfruto la mayor parte de mi tiempo programando, practicando calistenia, jugando algún videojuego y con mi familia o amigos.</p>
         </section>
         <section class="mt-10 grid lg:grid-cols-2 grid-cols-1 place-items-center gap-y-8 gap-x-5 md:text-base text-sm">
             <article v-for="article in articles" :key="article.id" class="borderStyle flex gap-4 flex-col md:flex-row items-center justify-center md:justify-start min-w-full lg:h-44 md:h-40 sm:h-48 md:px-6 px-2 pt-8 xl:pt-0 md:pb-5 pb-0">
