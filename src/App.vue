@@ -66,7 +66,7 @@ section{
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('/src/assets/font/Poppins-Regular.ttf');
+  src: local('/src/assets/font/Poppins-Regular.ttf');
   font-display: swap;
 }
 .trans{
