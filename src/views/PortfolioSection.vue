@@ -51,12 +51,14 @@ export default {
     data() {
         return {
             portItem: [
-                {title: 'Serranitos', src: '/img/thumbs/PAQPAQ_Thumb.jpg', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/thumbs/test.jpg', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/thumbs/test2.jpg', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/thumbs/test3.webp', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/thumbs/test4.webp', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/thumbs/test5.webp', type: 'Web App'},
+                {title: 'PanzerBoost', src: '/img/thumbs/panzer_thumb.webp', type: 'Web Design'},
+                {title: 'Los Serranitos', src: '/img/thumbs/serranitos_thumb.webp', type: 'Web App'},
+                {title: 'PAQPAQ', src: '/img/thumbs/paqpaq_thumb.webp', type: 'Web App'},
+                {title: 'CannaLitoral', src: '/img/thumbs/canna_thumb.webp', type: 'Web App'},
+                {title: 'DigitalBitSolutions', src: '/img/thumbs/digital_thumb.webp', type: 'Web Design'},
+                {title: 'Aló Taxi Tumbes', src: '/img/thumbs/taxi_thumb.webp', type: 'Web Design'},
+                {title: 'Encuadernaciones Antonio', src: '/img/thumbs/antonio_thumb.webp', type: 'Web Design'},
+                {title: 'Carsas', src: '/img/thumbs/carsas_thumb.webp', type: 'Web Design'},
             ]
         }
     },
