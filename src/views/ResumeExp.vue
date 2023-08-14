@@ -1,10 +1,7 @@
 <template>
-    <div >
-        <header class="sub-header">
-            <h1 class="font-semibold text-2xl">Resume</h1>
-            <hr class="rounded-2xl mt-2">
-        </header>
-        <section class="mt-10 ml-4 leading-7">
+    <div>
+        <SubHeader title="Experiencia"/>
+        <section class="sm:mt-10 mt-6 ml-2 md:text-base text-sm textColor">
             <div>
                 <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni tenetur ipsum excepturi dolorum labore, praesentium a, aperiam itaque voluptatem nihil, ex id minima officiis quisquam! Eos quibusdam atque pariatur.</div>
                 <div>Aut debitis a reprehenderit aspernatur eveniet, dignissimos molestias velit aperiam iure, molestiae sapiente modi. Perspiciatis, quisquam, cumque fuga asperiores perferendis aperiam repellat earum harum ipsa ipsam corrupti, praesentium molestias provident.</div>
@@ -17,9 +14,11 @@
 </template>
 
 <script>
-
+import SubHeader from '@/components/SubHeader.vue';
 export default {
-
+    components:{
+        SubHeader,
+    },
 };
 </script>
 

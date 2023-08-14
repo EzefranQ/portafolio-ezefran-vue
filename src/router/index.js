@@ -29,7 +29,8 @@ const routes = [
     path: '/blog',
     name: 'blog',
     component: BlogSection
-  }
+  },
+  
 ]
 
 const router = createRouter({

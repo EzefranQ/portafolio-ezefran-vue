@@ -1,1 +1,53 @@
 @tailwind base;@tailwind components;@tailwind utilities;
+@font-face {
+    font-family: 'Poppins';
+    src: local('/src/assets/font/Poppins-Regular.ttf');
+    font-display: swap;
+}
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    display: grid;
+    place-items: center;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+.textColor{
+      color: rgb(214, 214, 214);
+}
+.border-style{
+    border: 2px solid #383838;
+}
+.sub-header hr{
+    width: 40px;
+    height: 4.5px;
+    background: rgb(255, 174, 0);
+    border-color: rgb(255, 174, 0);
+}
+.trans{
+    transform: translate(5px, -5px);
+}
+section, p, h1, main, article{
+    transition: 0.4s ease-in-out;
+}
+section{
+    background: #1e1e1f;
+}
+@media screen and (max-width: 1023px) {
+    .trans{
+        transform: translate(0, -0);    
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+@media (min-width: 660px) and (max-width: 1023px) {
+    .fix-Wid{
+      width: 680px !important;
+    }
+}

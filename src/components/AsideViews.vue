@@ -1,11 +1,11 @@
 <template>
-    <div class="flex justify-between relative md:py-10 py-3 md:px-10 sm:px-5 px-5 overflow-hidden ">
+    <div class="relative md:py-10 py-5 md:px-10 sm:px-5 px-5">
 
-        <nav class="md:absolute hidden md:block right-0 md:top-0 md:w-auto">
-            <NavBar /> 
+        <nav class="lg:absolute hidden lg:block right-0 md:top-0 md:w-auto">
+            <NavBar class="" /> 
         </nav>
 
-        <section class="mt-3">
+        <section class="mt-3 mb-2.5">
             <router-view class="" v-slot="{Component}">
                 <transition >
                     <component :is="Component">

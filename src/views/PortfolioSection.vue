@@ -1,34 +1,76 @@
 <template>
-    <div >
-        <header class="sub-header">
-            <h1 class="font-semibold text-2xl">Portfolio</h1>
-            <hr class="rounded-2xl mt-2">
-        </header>
-        <section class="mt-10 ml-4 leading-7">
-            <div>
-                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni tenetur ipsum excepturi dolorum labore, praesentium a, aperiam itaque voluptatem nihil, ex id minima officiis quisquam! Eos quibusdam atque pariatur.</div>
-                <div>Aut debitis a reprehenderit aspernatur eveniet, dignissimos molestias velit aperiam iure, molestiae sapiente modi. Perspiciatis, quisquam, cumque fuga asperiores perferendis aperiam repellat earum harum ipsa ipsam corrupti, praesentium molestias provident.</div>
-                <div>Odit ipsa sit perspiciatis unde suscipit iste recusandae fugit consectetur maxime, sed natus qui rerum. Minima cumque consectetur quas, labore aspernatur impedit dolor expedita, sint atque esse facere, voluptates accusamus.</div>
-                <div>Aliquid architecto expedita, temporibus blanditiis hic pariatur repellendus odit laborum excepturi iusto similique explicabo quam maiores, reprehenderit velit. Aliquid assumenda minus esse nisi molestiae. Repudiandae odit eius debitis eveniet dolorum!</div>
-                <div>Laborum expedita quasi, fugiat vitae quos nam molestias dicta accusamus cumque corporis ipsam tempore consequuntur voluptas aut eum odit vero eaque reiciendis possimus! Itaque tempore quia ad dolores perferendis culpa.</div>
-                <div>Magnam quidem labore numquam laudantium voluptatem, sunt assumenda tempora tempore eum animi consectetur excepturi alias reprehenderit voluptates saepe a rem vero cupiditate repellat consequuntur totam commodi quis corrupti. In, vitae?</div>
-                <div>Nihil fugiat saepe unde ea sequi molestiae rerum aperiam exercitationem incidunt consequuntur earum, explicabo ipsam porro ratione eligendi in? Itaque quidem fuga veritatis rerum delectus molestiae perspiciatis voluptatum officiis odio?</div>
-                <div>Hic est harum ad nesciunt, in cum iste eaque, perferendis eos consequatur ipsam quis deleniti nemo corporis, corrupti laborum. Quos ea accusantium sapiente vero ab aperiam hic dolorum, id eum!</div>
-                <div>Doloribus nesciunt libero cumque tempore reprehenderit dignissimos culpa tenetur quia at, hic sed rerum? Vitae vero sint placeat praesentium corporis dicta quos voluptates velit, provident numquam recusandae, accusantium eaque earum.</div>
-                <div>Recusandae ratione in impedit rem beatae? Nulla nemo voluptatum nihil odit blanditiis rem. Laboriosam, ad sunt dicta omnis vitae eaque ipsum officia a porro, odit dolorem. Molestiae quisquam nobis saepe.</div>
-            
-            </div>
+    <div class="-ml-0">
+        <SubHeader title="Portafolio"/>
+        <nav class="mt-7 bg-transparent">
+            <ul class="sm:flex gap-5 items-center hidden">
+                <li>
+                    <a href="">
+                        All
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        App
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Web Desing
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Personal
+                    </a>
+                </li>
+            </ul>      
+        </nav>
+        <section class="sm:mt-9 mt-8 ml-2 grid gap-y-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center">
+            <article class="flex flex-col gap-4 h-60 w-11/12" v-for="item in portItem" :key="item.id">
+                <div class="h-48 w-full rounded-lg overflow-hidden flex justify-center items-center">
+                    <a href="#" class="flex justify-center items-center absolute text-2xl z-50">
+                        <font-awesome-icon icon="fa-solid fa-eye" class="bg-gray-900 py-3 px-5 rounded-lg"></font-awesome-icon>
+                    </a>
+                    <img height="100%" width="100%" class="object-cover opacity-70 w-full h-full" :src="item.src" alt="">
+                </div>
+                <div class="leading-3">
+                    <h1 class="text-lg font-medium">{{ item.title }}</h1>
+                    <p class="textColor opacity-60 font-normal">{{ item.type }}</p>
+                </div>
+            </article>
         </section>
     </div>
 </template>
 
 <script>
-
+import SubHeader from '@/components/SubHeader.vue';
 export default {
-
+    components:{
+        SubHeader,
+    },
+    data() {
+        return {
+            portItem: [
+                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
+            ]
+        }
+    },
 };
+
 </script>
 
 <style>
-
+select::-ms-expand {
+    display: none;
+}
+select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
 </style>    

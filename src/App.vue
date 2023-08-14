@@ -2,20 +2,20 @@
 
   <div class="text-gray-50">
 
-    <main class="h-full max-w-6xl flex-col xl:flex-row m-auto xl:px-2 sm:px-14 px-3 md:py-16 py-10 pb-5 flex justify-center items-start gap-5">
-    
+    <main class="fix-Wid flex-col xl:flex-row flex h-full w-screen m-auto pb-5 justify-center items-start gap-5 p-10">
+    <!-- xl:px-2 md:px-28 sm:px-14 px-3 xl:py-16 py-10 -->
       <section class="h-full xl:w-auto w-full">
         <SideBar class="border-style xl:rounded-3xl rounded-xl" />
       </section>
       
-      <section class="border-style xl:rounded-3xl rounded-xl w-full h-full">
-        <AsideViews />
+      <section class="border-style xl:rounded-3xl rounded-xl xl:w-2/3 w-full">
+        <AsideViews class="w-full"/>
       </section>
 
     </main>
 
-    <nav class="h-20 bg-transparent">
-        <NavBar class="mt-5 md:hidden fixed bottom-0 w-screen trans"/> 
+    <nav class="h-20 bg-transparent mt-5 lg:hidden">
+        <NavBar class="fixed bottom-0 left-0 w-screen trans"/> 
     </nav> 
 
 </div>   
@@ -38,47 +38,5 @@
 </script>
 
 <style>
-*{
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body{
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  background-color: #121212;
-  font-family: 'Poppins', sans-serif;
-}
-.border-style{
-  border: 2px solid #383838;
-}
-.sub-header hr{
-  width: 40px;
-  height: 4.5px;
-  background: rgb(255, 174, 0);
-  border-color: rgb(255, 174, 0);
-}
-section{
-  background: #1e1e1f;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: local('/src/assets/font/Poppins-Regular.ttf');
-  font-display: swap;
-}
-.trans{
-    transform: translate(5px, -5px);
-}
-
-@media screen and (max-width: 768px) {
-    .trans{
-        transform: translate(0, -0);    
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-    }
-}
 
 </style>
