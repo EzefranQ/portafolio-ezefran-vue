@@ -31,7 +31,7 @@
                     <a href="#" class="flex justify-center items-center absolute text-2xl z-50">
                         <font-awesome-icon icon="fa-solid fa-eye" class="bg-gray-900 py-3 px-5 rounded-lg"></font-awesome-icon>
                     </a>
-                    <img height="100%" width="100%" class="object-cover opacity-70 w-full h-full" :src="item.src" alt="">
+                    <img height="100%" width="100%" class="object-cover w-full h-full" :src="item.src" alt="">
                 </div>
                 <div class="leading-3">
                     <h1 class="text-lg font-medium">{{ item.title }}</h1>
@@ -51,12 +51,12 @@ export default {
     data() {
         return {
             portItem: [
-                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
-                {title: 'Serranitos', src: '/img/icon.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/thumbs/PAQPAQ_Thumb.jpg', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/thumbs/test.jpg', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/thumbs/test2.jpg', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/thumbs/test3.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/thumbs/test4.webp', type: 'Web App'},
+                {title: 'Serranitos', src: '/img/thumbs/test5.webp', type: 'Web App'},
             ]
         }
     },
