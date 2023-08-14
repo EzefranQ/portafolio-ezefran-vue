@@ -53,12 +53,12 @@ export default {
             portItem: [
                 {title: 'PanzerBoost', src: '/img/thumbs/panzer_thumb.webp', type: 'Web Design'},
                 {title: 'Los Serranitos', src: '/img/thumbs/serranitos_thumb.webp', type: 'Web App'},
-                {title: 'PAQPAQ', src: '/img/thumbs/paqpaq_thumb.webp', type: 'Web App'},
-                {title: 'CannaLitoral', src: '/img/thumbs/canna_thumb.webp', type: 'Web App'},
                 {title: 'DigitalBitSolutions', src: '/img/thumbs/digital_thumb.webp', type: 'Web Design'},
                 {title: 'Aló Taxi Tumbes', src: '/img/thumbs/taxi_thumb.webp', type: 'Web Design'},
+                {title: 'CannaLitoral', src: '/img/thumbs/canna_thumb.webp', type: 'Web App'},
                 {title: 'Encuadernaciones Antonio', src: '/img/thumbs/antonio_thumb.webp', type: 'Web Design'},
                 {title: 'Carsas', src: '/img/thumbs/carsas_thumb.webp', type: 'Web Design'},
+                {title: 'PAQPAQ', src: '/img/thumbs/paqpaq_thumb.webp', type: 'Web App'},
             ]
         }
     },
