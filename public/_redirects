@@ -1,3 +1,1 @@
-# Redirects from what the browser requests to what we serve
-/home                /github
-/portfolio           /resume              /blog
+/* /index.html 200
