@@ -34,7 +34,7 @@
                     </a>
                     <img height="100%" width="100%" class="object-cover w-full h-full hover:cursor-pointer" :src="item.src" alt="">
                 </div>
-                <div class="leading-3 z-50 bg-fix pt-4 pb-4">
+                <div class="leading-3 z-10 bg-fix pt-4 pb-4">
                     <h1 class="text-lg font-medium">{{ item.title }}</h1>
                     <p class="textColor opacity-60 font-normal">{{ item.type }}</p>
                 </div>
