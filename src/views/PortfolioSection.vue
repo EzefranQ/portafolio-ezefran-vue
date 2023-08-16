@@ -34,67 +34,67 @@
                     </a>
                     <img height="100%" width="100%" class="object-cover w-full h-full hover:cursor-pointer" :src="item.src" alt="">
                 </div>
-                <div class="leading-3 z-10 bg-fix pt-4 pb-4">
+                <div class="leading-3 z-50 bg-fix pt-4 pb-4">
                     <h1 class="text-lg font-medium">{{ item.title }}</h1>
                     <p class="textColor opacity-60 font-normal">{{ item.type }}</p>
                 </div>
             </article>
         </section>
-    </div>
 
-    <transition enter-active-class="ease-out duration-300"
-        enter-class="opacity-0" enter-to-class="opacity-100"
-        leave-active-class="ease-in duration-200"
-        leave-class="opacity-100" leave-to-class="opacity-0">
-
-        <div class="relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true" v-show="modal">
-        <div class="fixed inset-0 color-modal transition-opacity"></div>
-
-        <div class="fixed inset-0 z-10 overflow-y-auto">
-            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-            <transition enter-active-class="ease-out duration-300"
-            enter-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" enter-to-class="opacity-100 translate-y-0 sm:scale-100"
+        <transition enter-active-class="ease-out duration-300"
+            enter-class="opacity-0" enter-to-class="opacity-100"
             leave-active-class="ease-in duration-200"
-            leave-class="opacity-100 translate-y-0 sm:scale-100" leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            >
-            <div v-show="modal" class="relative transform overflow-hidden rounded-lg bg-fix text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-xl mb-10 pb-10">
-                <div class="bg-fix px-2 pb-2 pt-3 sm:p-3 sm:pb-3">
-                    <div>
-                        <img height="100%" width="100%" class=" rounded-lg object-cover w-full h-full hover:cursor-pointer" src='/img/thumbs/paqpaq.webp' alt="">
-                    </div>
-                    <div class="leading-3 py-4 sm:px-6 px-2">
-                        <h1 class="text-lg font-medium">PAQPAQ</h1>
-                        <div class="flex gap-4 items-center  textColor opacity-50 sm:mt-1 mt-3">
-                            <p class="sm:text-sm text-modal-fix">
-                                <font-awesome-icon icon="fa-solid fa-calendar" class="sm:mr-1 mr-0"></font-awesome-icon>
-                                Enero 2023
-                            </p>
-                            |
-                            <p class="sm:text-sm text-modal-fix">
-                                <font-awesome-icon icon="fa-solid fa-folder" class="sm:mr-1 mr-0"></font-awesome-icon>
-                                Web Desing
-                            </p>
-                            |
-                            <a href="#" class="sm:text-sm text-modal-fix">
-                                <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="sm:mr-1 mr-0"></font-awesome-icon>
-                                Ver Proyecto
-                            </a>
-                            
+            leave-class="opacity-100" leave-to-class="opacity-0">
+
+            <div class="relative z-50" v-show="modal">
+            <div class="fixed inset-0 color-modal transition-opacity"></div>
+
+            <div class="fixed inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <transition enter-active-class="ease-out duration-300"
+                enter-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" enter-to-class="opacity-100 translate-y-0 sm:scale-100"
+                leave-active-class="ease-in duration-200"
+                leave-class="opacity-100 translate-y-0 sm:scale-100" leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                >
+                <div v-show="modal" class="relative transform overflow-hidden rounded-lg bg-fix text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-xl mb-10 pb-4">
+                    <div class="bg-fix px-2 pb-2 pt-3 sm:p-3 sm:pb-3">
+                        <div>
+                            <img height="100%" width="100%" class=" rounded-lg object-cover w-full h-full hover:cursor-pointer" src='/img/thumbs/paqpaq.webp' alt="">
                         </div>
-                        <p class="textColor opacity-80 font-normal leading-6 mt-6">PAQPAQ es un Sistema de envios del alta presición. Acá colaboré en el mantenimiento e integracion de una API para la geolocalización, haciendo mas preciso los datos de envio.</p>
+                        <div class="leading-3 py-4 sm:px-6 px-2">
+                            <h1 class="text-lg font-medium">PAQPAQ</h1>
+                            <div class="flex gap-4 items-center  textColor opacity-50 sm:mt-1 mt-3">
+                                <p class="sm:text-sm text-modal-fix">
+                                    <font-awesome-icon icon="fa-solid fa-calendar" class="sm:mr-1 mr-0"></font-awesome-icon>
+                                    Enero 2023
+                                </p>
+                                |
+                                <p class="sm:text-sm text-modal-fix">
+                                    <font-awesome-icon icon="fa-solid fa-folder" class="sm:mr-1 mr-0"></font-awesome-icon>
+                                    Web Desing
+                                </p>
+                                |
+                                <a href="#" class="sm:text-sm text-modal-fix">
+                                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="sm:mr-1 mr-0"></font-awesome-icon>
+                                    Ver Proyecto
+                                </a>
+                                
+                            </div>
+                            <p class="textColor opacity-80 font-normal leading-6 mt-6">PAQPAQ es un Sistema de envios del alta presición donde colaboré en el mantenimiento y correciones del FrontEnd en general, también en la integracion de una API para la geolocalización, haciendo mas preciso los datos del envio.</p>
+                        </div>
+                    </div>
+                    <div class="sm:flex sm:flex-row-reverse sm:px-6">
+                        <button type="button" @click="funcModal" class="mt-3 inline-flex w-full justify-center rounded-md bg-fix px-3 py-2 text-sm font-semibold text-gray-900 ring-inset ring-gray-300 bg-gray-50 sm:mt-0 sm:w-auto">Cerrar</button>
                     </div>
                 </div>
-                <div class="px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                    <button type="button" @click="funcModal" class="mt-3 inline-flex w-full justify-center rounded-md bg-fix px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 bg-gray-50 sm:mt-0 sm:w-auto">Cerrar</button>
+                </transition>
                 </div>
             </div>
-            </transition>
             </div>
-        </div>
-        </div>
 
-    </transition>
+        </transition>
 
+    </div>
 </template>
 
 <script>
@@ -128,6 +128,7 @@ export default {
 </script>
 
 <style>
+
 .bg-fix{
     background: #1e1e1f;
 }
@@ -165,7 +166,6 @@ export default {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
-
 @media screen and (max-width: 640px) {
     .text-modal-fix{
         font-size: 11.205px;
