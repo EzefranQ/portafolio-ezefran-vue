@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col justify-center md:gap-6 gap-4 px-2 pb-7">
+    <section class="flex flex-col justify-center md:gap-6 gap-4 px-2 pb-8">
         <hr class="w-full xl-w-52 m-auto">
         <section class="xl:flex xl:flex-col grid lg:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 justify-center xl:w-auto lg:w-4/6 w-full ">
             

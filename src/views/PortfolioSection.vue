@@ -65,17 +65,17 @@
                     <div class="leading-3 py-4 sm:px-6 px-2">
                         <h1 class="text-lg font-medium">PAQPAQ</h1>
                         <div class="flex gap-4 items-center  textColor opacity-50 sm:mt-1 mt-3">
-                            <p class="sm:text-sm text-xs flex flex-col sm:gap-0 gap-2 sm:flex-row text-center">
+                            <p class="sm:text-sm text-modal-fix">
                                 <font-awesome-icon icon="fa-solid fa-calendar" class="sm:mr-1 mr-0"></font-awesome-icon>
                                 Enero 2023
                             </p>
                             |
-                            <p class="sm:text-sm text-xs flex flex-col sm:gap-0 gap-2 sm:flex-row text-center">
+                            <p class="sm:text-sm text-modal-fix">
                                 <font-awesome-icon icon="fa-solid fa-folder" class="sm:mr-1 mr-0"></font-awesome-icon>
                                 Web Desing
                             </p>
                             |
-                            <a href="#" class="sm:text-sm text-xs flex flex-col sm:gap-0 gap-2 sm:flex-row text-center">
+                            <a href="#" class="sm:text-sm text-modal-fix">
                                 <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="sm:mr-1 mr-0"></font-awesome-icon>
                                 Ver Proyecto
                             </a>
@@ -164,5 +164,16 @@ export default {
     transform: translate(0, -0);    
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+}
+
+@media screen and (max-width: 640px) {
+    .text-modal-fix{
+        font-size: 11.205px;
+    }
+}
+@media screen and (max-width: 366px) {
+    .text-modal-fix{
+        font-size: 9px;
+    }
 }
 </style>    
