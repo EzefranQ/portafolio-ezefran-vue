@@ -62,21 +62,21 @@
                     <div>
                         <img height="100%" width="100%" class=" rounded-lg object-cover w-full h-full hover:cursor-pointer" src='/img/thumbs/paqpaq.webp' alt="">
                     </div>
-                    <div class="leading-3 py-4 px-6">
+                    <div class="leading-3 py-4 sm:px-6 px-2">
                         <h1 class="text-lg font-medium">PAQPAQ</h1>
-                        <div class="flex gap-4 items-center  textColor opacity-50 mt-1">
-                            <p class="text-sm">
-                                <font-awesome-icon icon="fa-solid fa-calendar" class="mr-1"></font-awesome-icon>
+                        <div class="flex gap-4 items-center  textColor opacity-50 sm:mt-1 mt-3">
+                            <p class="sm:text-sm text-xs flex flex-col sm:gap-0 gap-2 sm:flex-row text-center">
+                                <font-awesome-icon icon="fa-solid fa-calendar" class="sm:mr-1 mr-0"></font-awesome-icon>
                                 Enero 2023
                             </p>
                             |
-                            <p class="text-sm">
-                                <font-awesome-icon icon="fa-solid fa-folder" class="mr-1"></font-awesome-icon>
+                            <p class="sm:text-sm text-xs flex flex-col sm:gap-0 gap-2 sm:flex-row text-center">
+                                <font-awesome-icon icon="fa-solid fa-folder" class="sm:mr-1 mr-0"></font-awesome-icon>
                                 Web Desing
                             </p>
                             |
-                            <a href="#" class="text-sm">
-                                <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="mr-1"></font-awesome-icon>
+                            <a href="#" class="sm:text-sm text-xs flex flex-col sm:gap-0 gap-2 sm:flex-row text-center">
+                                <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="sm:mr-1 mr-0"></font-awesome-icon>
                                 Ver Proyecto
                             </a>
                             
