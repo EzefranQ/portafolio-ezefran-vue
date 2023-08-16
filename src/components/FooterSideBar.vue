@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col justify-center md:gap-6 gap-4 px-2">
+    <section class="flex flex-col justify-center md:gap-6 gap-4 px-2 pb-7">
         <hr class="w-full xl-w-52 m-auto">
         <section class="xl:flex xl:flex-col grid lg:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 justify-center xl:w-auto lg:w-4/6 w-full ">
             
@@ -63,22 +63,5 @@ export default {
 </script>
 
 <style>
-.borderStyle{
-    background: linear-gradient(to bottom right,#404040,rgba(64,64,64,0) 50%);
-    border-radius: 8px;
-    box-shadow: -4px 8px 24px rgba(0,0,0,.25);
-    position: relative;
-    z-index: 1
-}
-.borderStyle::before{
-    background: #202022;
-    border-radius: inherit;
-    content: "";
-    inset: 1px;
-    position: absolute;
-    z-index: -1
-}
-hr{
-    border-color: #383838;
-}
+
 </style>

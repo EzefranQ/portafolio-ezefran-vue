@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .borderStyle{
     background: linear-gradient(to bottom right,#404040,rgba(64,64,64,0) 50%);
     border-radius: 8px;

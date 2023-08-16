@@ -1,5 +1,5 @@
 <template>
-    <div class="relative md:py-10 py-5 md:px-10 sm:px-5 px-5">
+    <div class="relative md:py-6 py-5 md:px-10 sm:px-5 px-5">
 
         <nav class="lg:absolute hidden lg:block right-0 md:top-0 md:w-auto">
             <NavBar class="" /> 
@@ -35,5 +35,11 @@ export default {
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+.sub-header hr{
+    width: 40px;
+    height: 4.5px;
+    background: rgb(255, 174, 0);
+    border-color: rgb(255, 174, 0);
 }
 </style>

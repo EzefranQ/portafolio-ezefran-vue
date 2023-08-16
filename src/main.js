@@ -9,10 +9,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faCircleHalfStroke, faEnvelope, faLanguage, faPhone, faLocationDot, faEye } from '@fortawesome/free-solid-svg-icons'
+import { faCircleHalfStroke, faEnvelope, faLanguage, faPhone, faLocationDot, faEye, faCalendar, faFolder, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faPhone, faLinkedin, faGithub, faCircleHalfStroke, faLanguage, faEnvelope, faLocationDot, faEnvelope, faEye)
+library.add(faPhone, faLinkedin, faGithub, faCircleHalfStroke, faLanguage, faEnvelope, faLocationDot, faEnvelope, faEye, faCalendar, faFolder, faMagnifyingGlass)
 
 createApp(App, tailwindcss).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app')

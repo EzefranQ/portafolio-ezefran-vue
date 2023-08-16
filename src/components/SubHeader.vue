@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="sub-header w-full">
-            <h1 class="font-semibold text-2xl">{{ title }}</h1>
+            <h1 class="font-semibold text-3xl">{{ title }}</h1>
             <hr class="rounded-2xl mt-2">
         </header>
     </div>

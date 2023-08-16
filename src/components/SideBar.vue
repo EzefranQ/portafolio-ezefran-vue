@@ -1,6 +1,6 @@
 <template>
     <section class="py-4 px-2 flex flex-col gap-5 xl:w-72 w-full relative overflow-hidden xl:rounded-3xl rounded-xl ">
-        <header class="flex xl:flex-col flex-row justify-start xl:justify-center items-center md:gap-4 gap-3 p-2">
+        <header class="flex xl:flex-col flex-row justify-start xl:justify-center items-center md:gap-4 gap-3 p-2 mt-8">
             <div class="xl:w-40 xl:h-40 lg:w-28 w-20 border-style fix-logo">
                 <img loading="eager" width="100%" height="100%" src="/img/icon.webp" alt="logo">
             </div>

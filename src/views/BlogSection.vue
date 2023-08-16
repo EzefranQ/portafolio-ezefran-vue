@@ -1,8 +1,8 @@
 <template>
     <div >
-        <SubHeader title="Sobre mi"/>
+        <SubHeader title="Blog"/>
         <section class="sm:mt-10 mt-6 ml-2 md:text-base text-sm textColor grid md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
-            <article class="bg-blog-item rounded-lg overflow-hidden bg-gray-900" v-for="item in blogItem" :key="item.id">
+            <article class="bg-blog-item rounded-lg overflow-hidden" v-for="item in blogItem" :key="item.id">
                 <div class="w-full h-56">
                     <img width="100%" height="100%" class="h-full w-full" :src="item.src" alt="">
                 </div>
@@ -37,7 +37,5 @@ export default {
 </script>
 
 <style>
-.bg-item-blog{
-    background: #202022;
-}
+
 </style>
