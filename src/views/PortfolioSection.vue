@@ -34,7 +34,7 @@
                     </a>
                     <img height="100%" width="100%" class="object-cover w-full h-full hover:cursor-pointer" :src="item.src" alt="">
                 </div>
-                <div class="leading-3 z-50 bg-fix pt-4 pb-4">
+                <div class="leading-3 z-10 bg-fix pt-4 pb-4">
                     <h1 class="text-lg font-medium">{{ item.title }}</h1>
                     <p class="textColor opacity-60 font-normal">{{ item.type }}</p>
                 </div>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="leading-3 py-4 sm:px-6 px-2">
                             <h1 class="text-lg font-medium">PAQPAQ</h1>
-                            <div class="flex sm:gap-4 gap-1 items-center textColor opacity-50 sm:mt-1 mt-3">
+                            <div class="modal-flex items-center textColor opacity-50 sm:mt-1 mt-3">
                                 <p class="sm:text-sm text-modal-fix">
                                     <font-awesome-icon icon="fa-solid fa-calendar" class="sm:mr-1 mr-0"></font-awesome-icon>
                                     Enero 2023
@@ -115,7 +115,7 @@ export default {
                 {title: 'Carsas', src: '/img/thumbs/carsas.webp', type: 'Web Design'},
                 {title: 'PAQPAQ', src: '/img/thumbs/paqpaq.webp', type: 'Web App'},
             ],
-            modal: false,
+            modal: true,
         }
     },
     methods: {
@@ -149,16 +149,23 @@ export default {
     scale: 1.3;
     transition: 400ms;
 }
+.modal-flex{
+    display: flex;
+    gap: 20px;
+}
 @media screen and (max-width: 767px){
-    .bg-fix{
+.bg-fix{
     background: #1e1e1f;
 }
-.hover-img a{
+.modal-flex{
+    gap: 14px;
+}
+/* .hover-img a{
     z-index: 2;
     position: absolute;
     transform: translateY(0px);
     transition: 400ms;
-}
+} */
 }
 .color-modal{
     background: rgb(30, 30, 31, .8);
@@ -168,12 +175,26 @@ export default {
 }
 @media screen and (max-width: 640px) {
     .text-modal-fix{
-        font-size: 11.5px;
+        font-size: 14px;
+    }
+    .modal-flex{
+        gap: 10px;
     }
 }
-/* @media screen and (max-width: 366px) {
+@media screen and (max-width: 400px) {
     .text-modal-fix{
-        font-size: 11px;
+        font-size: 12px;
     }
-} */
+    .modal-flex{
+        gap: 6px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .text-modal-fix{
+        font-size: 10px;
+    }
+    .modal-flex{
+        gap: 5px;
+    }
+}
 </style>    
