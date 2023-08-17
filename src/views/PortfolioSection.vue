@@ -115,7 +115,7 @@ export default {
                 {title: 'Carsas', src: '/img/thumbs/carsas.webp', type: 'Web Design'},
                 {title: 'PAQPAQ', src: '/img/thumbs/paqpaq.webp', type: 'Web App'},
             ],
-            modal: true,
+            modal: false,
         }
     },
     methods: {
@@ -128,7 +128,6 @@ export default {
 </script>
 
 <style>
-
 .bg-fix{
     background: #1e1e1f;
 }
@@ -160,12 +159,6 @@ export default {
 .modal-flex{
     gap: 14px;
 }
-/* .hover-img a{
-    z-index: 2;
-    position: absolute;
-    transform: translateY(0px);
-    transition: 400ms;
-} */
 }
 .color-modal{
     background: rgb(30, 30, 31, .8);

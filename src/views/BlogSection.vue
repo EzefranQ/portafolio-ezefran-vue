@@ -7,7 +7,7 @@
                     <img width="100%" height="100%" class="object-cover h-full w-full" :src="item.src" alt="">
                 </div>
                 <div class="flex flex-col gap-1 h-48 p-5">
-                   <a href="#">
+                   <a href="#" class="link-hover">
                     <p class="font-medium textColor opacity-60">{{ item.date }}</p>
                     <h2 class="text-2xl text-gray-50">{{ item.title }}</h2>
                     <p>{{ item.content }}</p>
@@ -38,5 +38,8 @@ export default {
 </script>
 
 <style>
-
+.link-hover:hover h2{
+    color: rgb(255, 174, 0);
+    transition: 300ms;
+}
 </style>
