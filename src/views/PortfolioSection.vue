@@ -115,7 +115,7 @@ export default {
                 {title: 'Carsas', src: '/img/thumbs/carsas.webp', type: 'Web Design'},
                 {title: 'PAQPAQ', src: '/img/thumbs/paqpaq.webp', type: 'Web App'},
             ],
-            modal:  true,
+            modal: false,
         }
     },
     methods: {
