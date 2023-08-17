@@ -29,8 +29,8 @@
         <section class="sm:mt-9 mt-8 ml-2 grid gap-y-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center">
             <article class="flex flex-col h-60 w-11/12 hover-img relative overflow-hidden" v-for="item in portItem" :key="item.id">
                 <div class="h-48 w-full rounded-lg overflow-hidden flex justify-center items-center">
-                    <a href="#" @click="funcModal" class="text-2xl opacity-70">
-                        <font-awesome-icon icon="fa-solid fa-eye" class="bg-gray-900 py-3 px-5 rounded-lg z-50"></font-awesome-icon>
+                    <a href="#" @click="funcModal" class="text-2xl bg-fix text-gray-50 rounded-lg">
+                        <font-awesome-icon icon="fa-solid fa-eye" class=" py-3 px-5 z-50"></font-awesome-icon>
                     </a>
                     <img height="100%" width="100%" class="object-cover w-full h-full hover:cursor-pointer" :src="item.src" alt="">
                 </div>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="leading-3 py-4 sm:px-6 px-2">
                             <h1 class="text-lg font-medium">PAQPAQ</h1>
-                            <div class="flex gap-4 items-center  textColor opacity-50 sm:mt-1 mt-3">
+                            <div class="flex sm:gap-4 gap-1 items-center textColor opacity-50 sm:mt-1 mt-3">
                                 <p class="sm:text-sm text-modal-fix">
                                     <font-awesome-icon icon="fa-solid fa-calendar" class="sm:mr-1 mr-0"></font-awesome-icon>
                                     Enero 2023
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="sm:flex sm:flex-row-reverse sm:px-6">
-                        <button type="button" @click="funcModal" class="mt-3 inline-flex w-full justify-center rounded-md bg-fix px-3 py-2 text-sm font-semibold text-gray-900 ring-inset ring-gray-300 bg-gray-50 sm:mt-0 sm:w-auto">Cerrar</button>
+                        <button type="button" @click="funcModal" class="mt-3 inline-flex w-full justify-center rounded-md bg-fix px-3 py-2 text-sm font-semibold text-gray-900 bg-gray-50 sm:mt-0 sm:w-auto">Cerrar</button>
                     </div>
                 </div>
                 </transition>
@@ -115,7 +115,7 @@ export default {
                 {title: 'Carsas', src: '/img/thumbs/carsas.webp', type: 'Web Design'},
                 {title: 'PAQPAQ', src: '/img/thumbs/paqpaq.webp', type: 'Web App'},
             ],
-            modal:  false,
+            modal:  true,
         }
     },
     methods: {
@@ -135,7 +135,7 @@ export default {
 .hover-img a{
     z-index: -1;
     position: absolute;
-    transform: translateY(200px);
+    transform: translateY(100px);
     transition: 400ms;
 }
 .hover-img:hover a{
@@ -168,12 +168,12 @@ export default {
 }
 @media screen and (max-width: 640px) {
     .text-modal-fix{
-        font-size: 11.205px;
+        font-size: 11.5px;
     }
 }
-@media screen and (max-width: 366px) {
+/* @media screen and (max-width: 366px) {
     .text-modal-fix{
-        font-size: 9px;
+        font-size: 11px;
     }
-}
+} */
 </style>    
