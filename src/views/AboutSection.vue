@@ -3,7 +3,7 @@
         <SubHeader title="Sobre mi"/>
 
         <section class="sm:mt-10 mt-6 ml-2 md:text-base text-sm textColor">
-            <p class="leading-7">Soy un desarrollador web con dos tres de experiencia en el campo. Tengo conocimientos en HTML, CSS, Bootstrap, Tailwind, Vue, EJS y JavaScript. Tengo conocimientos de las últimas tecnologías web y siempre estoy al día de los últimos desarrollos.</p>
+            <p class="leading-7">Soy un desarrollador web con tres de experiencia en el campo. Tengo conocimientos en HTML, CSS, Bootstrap, Tailwind, Vue, EJS y JavaScript. Tengo conocimientos de las últimas tecnologías web y siempre estoy al día de los últimos desarrollos.</p>
                 <br><br>
             <p class="leading-7">Soy una persona proactiva, responsable y con ganas de aprender. Estoy siempre buscando nuevos retos y desafíos. Tengo una gran capacidad de trabajo en equipo y soy capaz de trabajar de forma independiente.</p>
                 <br><br>
