@@ -29,8 +29,8 @@ export default {
     data() {
         return {
             contacts: [
-                {brand: 'Linkedin', nick: 'Ezefran', icon: 'fa-brands fa-linkedin'},
-                {brand: 'Github', nick: 'EzefranQ', icon: 'fa-brands fa-github'},
+                {brand: 'Linkedin', nick: 'Ezfran', icon: 'fa-brands fa-linkedin'},
+                {brand: 'Github', nick: 'Ezfran', icon: 'fa-brands fa-github'},
                 {brand: 'Phone', nick: '+58 4267849573', icon: 'fa-solid fa-phone'},
                 {brand: 'Location', nick: 'Venezuela', icon: 'fa-solid fa-location-dot'},
             ],
